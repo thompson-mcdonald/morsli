@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Container = ({ children }) => (
+const Container = ({ children, classNames }) => (
   <div>
-    <div className='container'>
+    <div className={'container ' + classNames}>
       {children}
     </div>
   </div>

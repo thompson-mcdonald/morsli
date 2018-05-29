@@ -16,6 +16,15 @@ body {
   max-width: 640px;
 }
 
+.container.profile p {
+  line-height: 1.6;
+  text-align: center;
+}
+
+.container-xl {
+  max-width: 840px;
+}
+
 .navigate {
   margin: 10px 0;
 }
@@ -41,6 +50,69 @@ iframe.bg-video {
   right: 0;
   bottom: 0;
   z-index: -4;
+}
+
+.video-thumb {
+  padding: 20px;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+  float: left;
+}
+
+@media screen and (max-width: 640px) {
+  .video-thumb {
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+.video-thumb:hover p {
+  opacity: 1;
+}
+
+.video-thumb p {
+  line-height: 1.4;
+  margin: 10px;
+  opacity: 0;
+  min-height: 45px;
+}
+
+@media screen and (max-width: 640px) {
+  .video-thumb p {
+    font-size: 14px;
+    min-height: 20px;
+    margin: 0 10px;
+  }
+}
+
+.video-thumb h3 {
+  margin: 10px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.video-thumb img {
+  max-width: 100%;
+  height: 200px;
+}
+
+@media screen and (max-width: 640px) {
+  .video-thumb img {
+    max-width: 100%;
+    height: 200px;
+  }
+}
+
+.video-thumb a:link {
+  opacity: 0.9;
+  color: white;
+}
+
+.video-thumb a:hover {
+  opacity: 1;
+  color: white;
 }
 
 .ytp-hide-controls .ytp-watermark {

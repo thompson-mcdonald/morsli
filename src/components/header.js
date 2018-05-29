@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Pdf from './../pdf/TomMorsliCV_2018.pdf'
 
 const Header = ({ siteTitle }) => (
   <div>
@@ -32,13 +33,12 @@ const Header = ({ siteTitle }) => (
           </Link>
         </li>
         <li>
-          <Link to='/CV/'>
+          <a href={Pdf} target='_blank'>
             CV
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
-            to="/video/">
+          <Link to='/Video/'>
             Video
           </Link>
         </li>
