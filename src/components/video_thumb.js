@@ -6,7 +6,7 @@ const VideoThumb = ({ vidTitle, vidImg, vidDesc, vidUrl }) => (
     <div className='video-thumb'>
       <a href={vidUrl}>
         <img src={vidImg} alt={vidDesc} />
-        <h3>{vidTitle}</h3>
+        <h3 className="f4 bold">{vidTitle}</h3>
         <p>{vidDesc}</p>
       </a>
     </div>

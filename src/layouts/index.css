@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
 body {
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
-  background: #111;
+  background: #1A1818;
   color: white;
 }
 
@@ -17,7 +19,7 @@ body {
 }
 
 .container.profile p {
-  line-height: 1.6;
+  line-height: 1.5;
   text-align: center;
 }
 
@@ -68,6 +70,12 @@ iframe.bg-video {
   }
 }
 
+@media screen and (min-width: 420px) {
+  .container.profile p {
+    text-align: justify;
+  }
+}
+
 .video-thumb:hover p {
   opacity: 1;
 }
@@ -106,13 +114,15 @@ iframe.bg-video {
 }
 
 .video-thumb a:link {
-  opacity: 0.9;
+  opacity: 0.7;
   color: white;
+  transition: opacity .5s;
 }
 
 .video-thumb a:hover {
   opacity: 1;
   color: white;
+  transition: opacity .5s;
 }
 
 .ytp-hide-controls .ytp-watermark {
