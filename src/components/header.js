@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Pdf from './../pdf/TomMorsliCV_2018.pdf'
+import Pdf from './../pdf/TomMorsliCVNew.pdf'
 
 const Header = ({ siteTitle }) => (
   <div>
